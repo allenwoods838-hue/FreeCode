@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freecode-ai"
+version = "1.0.0"
+description = "A free, local, open-source coding agent for your terminal (Claude Code alternative)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "FreeCode contributors" }]
+keywords = ["ai", "agent", "coding", "cli", "ollama", "llm"]
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development",
+]
+dependencies = []
+
+[project.scripts]
+freecode = "freecode.__main__:main"
+
+[tool.setuptools]
+packages = ["freecode"]
